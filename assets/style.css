@@ -11,9 +11,8 @@ body {
     display: flex; 
     align-items: center;
     justify-content: center;
-    
+    /* position: relative; */
 }
-
 
 body::before {
     background-image: url("img/candado.png");
@@ -41,6 +40,7 @@ body::before {
     background-size: 100% 100%;
     position: relative;
     overflow: hidden;
+    /* padding: 2rem; */
 }
 
 .container__contenido {
@@ -48,6 +48,7 @@ body::before {
     align-items: center;
     position: relative;
     width: 100%;
+    justify-content: center;
 }
 
 .container__informacion {
@@ -63,13 +64,16 @@ h1 {
     font-weight: 700;
     line-height: 100%;
     padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .container__texto {
     margin: 12px 0;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .container__texto-azul {
@@ -81,18 +85,25 @@ h1 {
     display: flex;
     align-items: center;  
     margin-bottom: 12px;
-    margin: 30px;
-    gap: 2rem;  
+    margin: 20px;
+    gap: 1rem;
+    justify-content: center;
+    /* flex-direction: column; */
 }
 
 .texto__parrafo {
     color: #FFF;
     font-family: 'Inter';
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 10px;  
+    margin-left: 1px;
+    display: flex;
+    align-items: baseline;
+    /*justify-content: space-between;*/
+    gap: 1rem;
+    /* text-align: center; */
 }
 
 .container__input {
@@ -101,11 +112,13 @@ h1 {
     border-radius: 16px;
     background-color: #FFF;
     border: none;
-    color: #1875E8;
+    color: #535353;
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+    /* text-align: center; */
+    
 }
 
 .boton{
@@ -115,7 +128,22 @@ h1 {
     background-color: #1875E8;
     padding: 1rem 1.5rem;
     border-radius: 16px;
-    width: 243px;
+    width: 148px;
+    height: 72px;
+    box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.50);
+    cursor: pointer;
+    /* text-align: center; */
+
+}
+
+.botonL{
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #1875E8;
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+    width: 148px;
     height: 72px;
     box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.50);
     cursor: pointer;
@@ -129,9 +157,13 @@ h1 {
     border: none;
     color: #1875E8;
     margin: 50px;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+    text-align: center;
+
 }
+
+
 
